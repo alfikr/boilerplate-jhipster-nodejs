@@ -1,0 +1,46 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "boilerplate whitelist app",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "boiler",
+    "plate",
+    "microservice"
+  ],
+  "author": "danang",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.6",
+    "body-parser": "^1.19.0",
+    "chai-as-promised": "^7.1.1",
+    "chalk": "^4.0.0",
+    "compression": "^1.7.4",
+    "errorhandler": "^1.5.1",
+    "eureka-js-client": "^4.5.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "kafka-node": "^5.0.0",
+    "lodash": "^4.17.15",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "simplified-hystrixjs": "^1.0.16"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.20.2",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.4",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2",
+    "webpack": "^4.43.0"
+  }
+}
