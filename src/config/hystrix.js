@@ -1,2 +1,5 @@
-const CommandFactory = require('hystrixjs').commandFactory;
-const serviceCommand = CommandFactory.getOrCreate('Service on port:'+process.env.PORT)
+const HystrixConfig = require('hystrixjs').hystrixConfig;
+HystrixConfig.init({
+    "hystrix.circuit.volumeThreshold.forceOverride":true,
+    "hystrix.circuit.volumeThreshold.override":0
+})
