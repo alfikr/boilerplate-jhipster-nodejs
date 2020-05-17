@@ -1,0 +1,12 @@
+{
+    "openapi":"3.0.0",
+    "info": {
+        "version":"0.0.1",
+        "title":"Title",
+        "description":"Deskripsi",
+        "license":{
+            "name":"Danang",
+            "url":""
+        }
+    }
+}
