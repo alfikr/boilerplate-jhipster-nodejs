@@ -15,7 +15,7 @@ COPY .env ./
 
 COPY .env* ./
 
-COPY src/* ./src/
+COPY src/ ./src/
 
 RUN npm install 
 
