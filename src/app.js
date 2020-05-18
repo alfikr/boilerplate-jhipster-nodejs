@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const logger = require('morgan')
 const errorHandler = require('errorhandler')
 const dotenv = require('dotenv')
-const path = require('path')
+const {resolve} = require('path')
 const browserSync = require('browser-sync')
 const multer = require('multer')
 const helmet = require('helmet')
@@ -19,8 +19,8 @@ const swaggerDoc = require('../swagger.json')
 /**
  * Loading environment variable
  */
-dotenv.config({ path: __dirname + '/./../.env' })
-dotenv.config({ path: __dirname + '/./../.env.dev' })
+dotenv.config({ path:resolve( __dirname + '/./../.env') })
+dotenv.config({ path: resolve(__dirname + '/./../.env.dev') })
 const options = {
     swaggerOptions: {
         explorer: true
